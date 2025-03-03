@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<script type="module" src="scripts/script.js"></script>
+		<script type="module" src="scripts/projects.js"></script>
+		<title>Matéo Leroy</title>
+	</head>
+	<body>
+		<header>
+			<div id="name">Matéo Leroy</div>
+			<div id="subtitle">Web & software developper</div>
+		</header>
+		<main>
+			<section id="about">
+				<h2>About me</h2>
+				<p>
+					Greetings! I'm Matéo, an aspiring software developer
+					currently pursuing my Bachelor's degree. With a strong
+					passion for coding and building innovative solutions, I love
+					exploring different technologies and working on personal
+					projects. I specialize in web and software development,
+					constantly improving my skills by experimenting with new
+					frameworks, and developing various applications in my spare
+					time. I also enjoy taking on challenging coding problems. My
+					goal is to create impactful software and contribute to the
+					tech community, one line of code at a time.
+				</p>
+			</section>
+
+			<section id="experience">
+				<h2>Experience</h2>
+				<div class="timeline-container">
+					<button class="nav-button prev-button">&lt;</button>
+
+					<div class="timeline">
+						<div class="timeline-line"></div>
+						<div class="timeline-markers">
+							<!-- Les marqueurs seront générés en JS -->
+						</div>
+						<div class="timeline-events">
+							<!-- Exemple d'événement -->
+							<div class="event" data-date="2023-05">
+								<div class="event-dot"></div>
+								<div class="event-content">
+									<h3>Projet Portfolio</h3>
+									<p>
+										Création d'un portfolio personnel avec
+										HTML/CSS/JS
+									</p>
+									<div class="event-footer">
+										<span class="event-date"
+											>Mars 2023</span
+										>
+										<!-- <a
+											href="https://github.com/YourUsername/Portfolio"
+											class="github-link"
+											target="_blank"
+										>
+											<i class="fab fa-github"></i>
+										</a> -->
+									</div>
+								</div>
+							</div>
+							<!-- Autres événements... -->
+						</div>
+					</div>
+
+					<button class="nav-button next-button">&gt;</button>
+				</div>
+			</section>
+
+			<section id="skills">
+				<h2>Skills</h2>
+				<ul>
+					<li>
+						<i
+							class="fab fa-python"
+							style="font-size: 40px; color: #306998"
+						></i>
+					</li>
+					<!-- Python (couleur python) -->
+					<li>
+						<i
+							class="fab fa-java"
+							style="font-size: 40px; color: #007396"
+						></i>
+					</li>
+					<!-- Java (couleur java) -->
+					<li>
+						<i
+							class="fab fa-html5"
+							style="font-size: 40px; color: #e34f26"
+						></i>
+					</li>
+					<!-- HTML -->
+					<li>
+						<i
+							class="fab fa-css3-alt"
+							style="font-size: 40px; color: #1572b6"
+						></i>
+					</li>
+					<!-- CSS -->
+					<li>
+						<i
+							class="fab fa-js-square"
+							style="font-size: 40px; color: #f7df1e"
+						></i>
+					</li>
+					<!-- JavaScript -->
+					<li>
+						<i
+							class="fab fa-node"
+							style="font-size: 40px; color: #8cc84b"
+						></i>
+					</li>
+					<!-- Node.js -->
+					<li>
+						<img
+							src="assets/mysql-icon.svg"
+							alt="MySQL"
+							style="width: 40px; height: auto"
+						/>
+					</li>
+					<!-- MongoDB Logo -->
+					<li>
+						<img
+							src="assets/mongodb-icon.svg"
+							alt="MongoDB"
+							style="width: 40px; height: auto"
+						/>
+					</li>
+					<li>
+						<img
+							src="assets/flask.svg"
+							alt="Python Flask"
+							style="width: 40px; height: auto"
+						/>
+					</li>
+					<li>
+						<img
+							src="assets/sequelizejs-icon.svg"
+							alt="Sequelize ORM"
+							style="width: 40px; height: auto"
+						/>
+					</li>
+				</ul>
+
+				<h2>Tools</h2>
+				<ul>
+					<li>
+						<i
+							class="fab fa-git"
+							style="font-size: 40px; color: #f1502f"
+						></i>
+					</li>
+					<!-- Git -->
+					<li>
+						<img
+							src="assets/github-tile.svg"
+							alt="Github"
+							style="width: 40px; height: auto"
+						/>
+					</li>
+					<li>
+						<i
+							class="fab fa-docker"
+							style="font-size: 40px; color: #2496ed"
+						></i>
+					</li>
+					<!-- Docker -->
+					<li>
+						<i
+							class="fab fa-linux"
+							style="font-size: 40px; color: #000000"
+						></i>
+					</li>
+					<!-- Linux -->
+					<li>
+						<i
+							class="fab fa-windows"
+							style="font-size: 40px; color: #00a4ef"
+						></i>
+					</li>
+					<li>
+						<img
+							src="assets/nginx-icon.svg"
+							alt="nginx"
+							style="width: 40px; height: auto"
+						/>
+					</li>
+					<!-- Windows -->
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>

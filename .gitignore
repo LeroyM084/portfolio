@@ -1,0 +1,26 @@
+# Dossiers et fichiers à ignorer
+.history/
+node_modules/
+bower_components/
+
+# Fichiers temporaires de l'éditeur
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Fichiers de log
+*.log
+
+# Dossiers de build ou dist
+/dist/
+/build/
+
+# Fichiers de configuration personnels
+*.env
+.vscode/
+.idea/
+
+# Fichiers systèmes (ex. macOS, Windows)
+.DS_Store
+Thumbs.db
