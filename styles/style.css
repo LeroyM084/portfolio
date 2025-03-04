@@ -196,7 +196,7 @@ main {
 
 .timeline-markers {
     position: absolute;
-    top: 50%; /* Modifié de 8.5% à 50% */
+    top: 49%; /* Modifié de 8.5% à 50% */
     left: 0;
     width: max-content;
     transform: translateY(-50%); /* Ajouté pour le centrage vertical */
@@ -268,23 +268,24 @@ main {
     border-radius: 10px;
     border: 2px solid #F5CB5C;
     transition: all 0.3s ease;
+    transform : translateX(-45%)
 }
 
 /* Positionnement des événements */
 .event[data-position="top"] .event-content {
-    bottom: 60px; /* Affiche le contenu au-dessus de la frise */
+    bottom: 1000px; /* Affiche le contenu au-dessus de la frise */
 }
 
 .event[data-position="bottom"] .event-content {
-    top: 60px; /* Affiche le contenu en dessous de la frise */
+    top: 100px; /* Affiche le contenu en dessous de la frise */
 }
 
 .event[data-position="top"] .event-content {
-    bottom: 40px; /* Au-dessus de la frise */
+    bottom: 160px; /* Au-dessus de la frise */
 }
 
 .event[data-position="bottom"] .event-content {
-    top: 40px; /* En dessous de la frise */
+    top: 160px; /* En dessous de la frise */
 }
 
 /* Boutons de navigation */

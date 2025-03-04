@@ -13,7 +13,7 @@ export const projects = [
 		date: "2024-06",
 		displayDate: "Juin 2024",
 		technologies: ["HTML", "CSS", "JavaScript", "PHP"],
-		position: "top",
+		position: "bottom",
 	},
 	{
 		title: "Rentrée à Sup de Vinci",
@@ -39,7 +39,7 @@ export const projects = [
 		displayDate: "December 2024",
 		technologies: ["JavaScript", "Python", "Flask"],
 		githubUrl: "https://github.com/LeroyM084/Mushroom_Password",
-		position: "top",
+		position: "bottom",
 	},
 	{
 		title: "Lampadaires",
@@ -50,6 +50,14 @@ export const projects = [
 		githubUrl: "https://github.com/LeroyM084/lamps",
 		position: "top",
 	},
+	{
+		title: "Site vitrine film",
+		description: "Projet scolaire de site vitrine pour un film",
+		date: "2023-12",
+		displayDate: "Décembre 2023",
+		technologies: ["HTML/CSS", "JavaScript"],
+		position: "top",
+	},
 ];
 
 export function createEventElement(project) {
@@ -57,7 +65,6 @@ export function createEventElement(project) {
         <div class="event" data-date="${project.date}" data-position="${
 		project.position
 	}">
-            <div class="event-dot"></div>
             <div class="event-content">
                 <div class="event-header">
                     <h3>${project.title}</h3>
