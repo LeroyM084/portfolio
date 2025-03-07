@@ -166,4 +166,42 @@ export function initializeProjects() {
 
 	// Ajouter un écouteur pour le redimensionnement
 	window.addEventListener("resize", positionEvents);
+
+	// Ajouter les projets à la vue mobile
+	const mobileProjects = document.querySelector(".mobile-projects");
+	if (mobileProjects) {
+		mobileProjects.innerHTML = projects
+			.sort((a, b) => new Date(b.date) - new Date(a.date)) // Trie par date décroissante
+			.map(
+				(project) => `
+				<li>
+					<div class="event-content">
+						<div class="event-header">
+							<h3>${project.title}</h3>
+						</div>
+						<p>${project.description}</p>
+						<div class="technologies">
+							${project.technologies
+								.map(
+									(tech) =>
+										`<span class="tech-tag">${tech}</span>`
+								)
+								.join("")}
+						</div>
+						<div class="event-footer">
+							<span class="event-date">${project.displayDate}</span>
+							${
+								project.githubUrl
+									? `<a href="${project.githubUrl}" class="github-link" target="_blank">
+									<i class="fab fa-github"></i>
+								   </a>`
+									: ""
+							}
+						</div>
+					</div>
+				</li>
+			`
+			)
+			.join("");
+	}
 }

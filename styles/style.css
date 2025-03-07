@@ -36,7 +36,8 @@ main {
 /* === Section About === */
 #about {
     background-color: #242423;
-    padding: 40px;
+    padding: 10px; 
+    /* Anciennemtn 40 ^ */
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -50,6 +51,8 @@ main {
 #about h2 {
     color: #F5CB5C;
     font-size: 2.5em;
+    margin-right : 10px;
+    margin-left:10px;
     margin-bottom: 30px;
     text-align: center;
     position: relative;
@@ -70,7 +73,7 @@ main {
     color: #fff;
     line-height: 1.8;
     font-size: 1.1em;
-    text-align: justify;
+    /* text-align: justify; */
     padding: 20px;
 }
 
@@ -346,7 +349,208 @@ main {
     color: #333533;
 }
 
+/* D'abord, créons le style pour l'élément alternatif mobile */
+.mobile-experience {
+    display: none; /* Caché par défaut */
+    background-color: #242423;
+    /* padding: 20px; */
+    border-radius: 15px;
+    /* border: 2px solid #F5CB5C; */
+    /* margin: 20px auto; Change 20px 0 to 20px auto */
+    max-width: 90%; /* Limite la largeur sur mobile */
+}
+
+.mobile-projects {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    gap: 20px;
+    width: 160%; /* Assure que la liste prend toute la largeur disponible */
+    /* max-width: 600px; Limite la largeur du conteneur */
+    margin: 0 auto; /* Centre le conteneur */
+}
+
+.mobile-projects li {
+    background-color: #333533;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #F5CB5C;
+    transition: all 0.3s ease;
+    width: 100%; /* Assure que chaque élément prend toute la largeur */
+    max-width: 500px; /* Limite la largeur maximale des cartes */
+    box-sizing: border-box; /* Inclut padding et border dans la largeur */
+    padding: 0;
+    margin: 0;
+    width: 90%; /* Réduit légèrement la largeur */
+}
+
+.mobile-projects .event-content {
+    width: 120%;
+    background-color: #333533;
+    padding: 25px; /* Augmente le padding */
+    border-radius: 10px;
+    border: 2px solid #F5CB5C;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    margin: 0;
+    transform: none;
+    box-sizing: border-box;
+}
+
+.mobile-projects .event-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(245, 203, 92, 0.2);
+}
+
+.mobile-projects .event-content {
+    width: 100%;
+    transform: none; /* Supprime la transformation qui décalait les éléments */
+    padding: 0; /* Supprime le padding supplémentaire */
+}
+
+.mobile-projects .event-header h3 {
+    color: #F5CB5C;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.mobile-projects .event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.mobile-projects .event-date {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.mobile-projects .github-link {
+    color: #F5CB5C;
+    text-decoration: none;
+}
+
+.mobile-projects .github-link:hover {
+    color: #fff;
+}
+
+.mobile-experience {
+    display: none;
+    background-color: #242423;
+    /* padding: 20px; */
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 90%;
+}
+
+.mobile-projects {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobile-projects li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mobile-projects .event-content {
+    width: 100%;
+    background-color: #333533;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #F5CB5C;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-projects .event-content {
+        padding: 15px;
+    }
+}
+
 /* Ajoutez ces media queries à la fin du fichier */
+@media screen and (max-width: 768px) {
+    .timeline {
+        width: 100%;
+        height: 500px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .timeline-container {
+        padding: 10px 0;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .timeline-events {
+        width: 400%; /* Réduit de 800% à 400% */
+        height: 80%;
+        top: 10%;
+    }
+
+    .event-content {
+        width: 180px;
+        padding: 15px;
+        font-size: 0.9em;
+        transform: translateX(-50%);
+    }
+
+    .timeline-markers {
+        gap: 60px;
+        padding: 0 20px;
+        width: max-content;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .timeline-container, 
+    .timeline,
+    .timeline-events,
+    .timeline-markers,
+    .nav-button {
+        display: none; /* Cache tous les éléments de la timeline */
+    }
+
+    .mobile-experience {
+        display: block; /* Affiche l'alternative mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timeline {
+        height: 400px;
+    }
+
+    .timeline-events {
+        width: 300%; /* Encore plus compact pour petits écrans */
+    }
+
+    .event-content {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .timeline-markers {
+        gap: 40px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .timeline {
         height: 600px; /* Réduire la hauteur sur mobile */
@@ -384,6 +588,101 @@ main {
     #contact p {
         font-size: 0.5em;
     }
+
+    .nav-button {
+        display: none; /* Cache les boutons de navigation */
+    }
+
+    .timeline-container {
+        gap: 0; /* Supprime l'espace réservé aux boutons */
+        padding: 20px 0;
+    }
+
+    .timeline {
+        width: 100%; /* Utilise toute la largeur disponible */
+    }
+
+    .timeline {
+        width: 100%;
+        height: 400px; /* Réduit la hauteur */
+    }
+
+    .timeline-events {
+        width: 300%; /* Réduit la largeur totale des événements */
+        height: 100%; /* Utilise toute la hauteur disponible */
+    }
+
+    .event-content {
+        width: 200px;
+        padding: 10px;
+        font-size: 0.9em;
+        transform: translateX(-50%); /* Centre mieux le contenu */
+    }
+
+    .timeline-markers {
+        gap: 60px;
+        width: 100%; /* S'assure que les marqueurs prennent toute la largeur */
+    }
+
+    .timeline-line {
+        width: 100%; /* S'assure que la ligne prend toute la largeur */
+    }
+
+    .event[data-position="top"] .event-content {
+        bottom: 120px; /* Réduit la distance */
+    }
+
+    .event[data-position="bottom"] .event-content {
+        top: 120px; /* Réduit la distance */
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .timeline-container {
+        gap: 0;
+        padding: 20px 0;
+        overflow-x: auto; /* Permet le défilement horizontal */
+        -webkit-overflow-scrolling: touch; /* Améliore le défilement sur iOS */
+    }
+
+    .timeline {
+        height: 500px;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .timeline-events {
+        width: 600%; /* Réduit la largeur mais garde assez d'espace pour tous les événements */
+        height: 80%;
+        top: 10%;
+    }
+
+    .event-content {
+        width: 180px;
+        padding: 15px;
+        font-size: 0.9em;
+        transform: translateX(-50%);
+    }
+
+    .event[data-position="top"] .event-content {
+        bottom: 80px; /* Réduit la distance par rapport à la ligne */
+    }
+
+    .event[data-position="bottom"] .event-content {
+        top: 80px; /* Réduit la distance par rapport à la ligne */
+    }
+
+    .timeline-markers {
+        gap: 80px; /* Ajuste l'espacement entre les marqueurs */
+        padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+    }
+
+    .timeline-container {
+        padding: 10px 0;
+        overflow-x: visible; /* Permet de voir tout le contenu */
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -394,6 +693,152 @@ main {
 
     .timeline-container {
         gap: 10px; /* Réduire l'espace autour des boutons */
+    }
+
+    .event-content {
+        width: 160px;
+        transform: translateX(-50%);
+    }
+
+    .timeline {
+        height: 350px; /* Encore plus petit pour les très petits écrans */
+    }
+
+    .timeline-markers {
+        gap: 40px; /* Réduit encore l'espace entre les marqueurs */
+    }
+
+    .timeline {
+        height: 450px;
+    }
+
+    .event-content {
+        width: 160px;
+        padding: 10px;
+        transform: translateX(-50%);
+    }
+
+    .event[data-position="top"] .event-content {
+        bottom: 70px;
+    }
+
+    .mobile-projects li {
+        max-width: 100%; /* Sur très petits écrans, utilise toute la largeur */
+        margin: 0 10px; /* Ajoute une petite marge sur les côtés */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-projects li {
+        max-width: 100%;
+        margin: 0 5px;
+    }
+    
+    .mobile-projects .event-content {
+        padding: 20px;
+    }
+
+    .mobile-projects li {
+        width: 85%; /* Encore plus étroit sur mobile */
+    }
+    
+    .mobile-projects .event-content {
+        padding: 15px;
+    }
+}
+
+/* === Mobile Experience === */
+.mobile-experience {
+    display: none;
+    background-color: #242423;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.mobile-projects {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.mobile-projects li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mobile-projects .event-content {
+    width: 100%;
+    background-color: #333533;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #F5CB5C;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.mobile-projects .event-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(245, 203, 92, 0.2);
+}
+
+.mobile-projects .event-header h3 {
+    color: #F5CB5C;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.mobile-projects .event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.mobile-projects .event-date {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.mobile-projects .github-link {
+    color: #F5CB5C;
+    text-decoration: none;
+}
+
+.mobile-projects .github-link:hover {
+    color: #fff;
+}
+
+/* === Media Queries === */
+@media screen and (max-width: 768px) {
+    /* Cache la timeline */
+    .timeline-container, 
+    .timeline,
+    .timeline-events,
+    .timeline-markers,
+    .nav-button {
+        display: none;
+    }
+
+    /* Affiche la version mobile */
+    .mobile-experience {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-projects li {
+        width: 90%;
+    }
+    
+    .mobile-projects .event-content {
+        padding: 15px;
     }
 }
 
