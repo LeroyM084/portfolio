@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Position initiale
 	let currentPosition = 0;
-	const scrollAmount = 100; // Réduit pour un défilement plus fluide
+	const scrollAmount = window.innerWidth <= 768 ? 60 : 100; // Ajuster le défilement sur mobile
 
 	// Gestionnaire des boutons
 	prevButton.addEventListener("click", () => {
@@ -240,7 +240,7 @@ function createNavIndicator(type, arrow) {
 	img.style.width = "16px"; // Ajustez la taille selon vos besoins
 	img.style.height = "16px";
 
-	indicator.appendChild(img);
+	// indicator.appendChild(img);
 	return indicator;
 }
 

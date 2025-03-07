@@ -163,6 +163,32 @@ main {
     background-color: #F5CB5C;
 }
 
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: rgba(245, 203, 92, 0.1);  /* Utilise la couleur #F5CB5C avec transparence */
+    color: #F5CB5C;
+    border: 1px solid #F5CB5C;
+    border-radius: 5px;
+    padding: 4px 8px;  /* Correction de la syntaxe "3 px" */
+    font-size: 0.85em;
+    transition: all 0.3s ease;
+    margin: 2px;
+}
+
+.tech-tag:hover {
+    color: #242423;  /* Couleur sombre de votre thème */
+    background-color: #F5CB5C;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(245, 203, 92, 0.3);
+}
+
 .timeline-container {
     position: relative;
     display: flex;
@@ -305,4 +331,51 @@ main {
 .nav-button:hover {
     background-color: #F5CB5C;
     color: #333533;
+}
+
+/* Ajoutez ces media queries à la fin du fichier */
+@media screen and (max-width: 768px) {
+    .timeline {
+        height: 600px; /* Réduire la hauteur sur mobile */
+    }
+
+    .event-content {
+        width: 200px; /* Réduire la largeur des cartes */
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .timeline-markers {
+        gap: 60px; /* Réduire l'espace entre les marqueurs */
+    }
+
+    .event[data-position="top"] .event-content {
+        bottom: 160px; /* Réduire la distance */
+    }
+
+    .event[data-position="bottom"] .event-content {
+        top: 160px; /* Réduire la distance */
+    }
+
+    .nav-button {
+        width: 32px;
+        height: 32px;
+        font-size: 1em;
+    }
+
+    .tech-tag {
+        font-size: 0.75em;
+        padding: 2px 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .event-content {
+        width: 160px; /* Encore plus petit sur très petits écrans */
+        transform: translateX(-40%);
+    }
+
+    .timeline-container {
+        gap: 10px; /* Réduire l'espace autour des boutons */
+    }
 }
