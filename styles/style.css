@@ -530,6 +530,14 @@ main {
     .mobile-experience {
         display: block; /* Affiche l'alternative mobile */
     }
+
+    #contact p {
+        font-size: 0.9em; /* Réduit de moitié par rapport à 1.8em */
+    }
+
+    #contact p {
+        font-size: 1em; /* Réduit de 1.8em à 1em sur mobile */
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -683,6 +691,7 @@ main {
         padding: 10px 0;
         overflow-x: visible; /* Permet de voir tout le contenu */
     }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -744,6 +753,10 @@ main {
     
     .mobile-projects .event-content {
         padding: 15px;
+    }
+
+    #contact p {
+        font-size: 0.8em; /* Encore plus petit sur très petits écrans */
     }
 }
 
@@ -867,10 +880,24 @@ main {
     position: relative;
 }
 
+/* Style de base pour #contact p */
 #contact p {
     color: #fff;
     line-height: 1.4;
     font-size: 1.8em;
     text-align: center;
     margin-top: 5px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #contact p {
+        font-size: 1.4em; /* Augmenté de 0.9em à 1.4em */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact p {
+        font-size: 1.2em; /* Augmenté de 0.7em à 1.2em */
+    }
 }
