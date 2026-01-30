@@ -1,22 +1,22 @@
 {
-    "projects" : [
-        {
-            "id": 1,
-            "name": "Project Alpha",
-            "description": "A cutting-edge project focused on AI development.",
-            "status": "In Progress"
-        },
-        {
-            "id": 2,
-            "name": "Project Beta",
-            "description": "A web application for managing tasks and productivity.",
-            "status": "Completed"
-        },
-        {
-            "id": 3,
-            "name": "Project Gamma",
-            "description": "An open-source library for data visualization.",
-            "status": "Planned"
-        }
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "name": "O-Soleil",
+      "description": "Une application permettant de trouver un endroit où les bâtiments ne cachent pas le soleil à Bordeaux, grâce à des données géospatiales et des calculs de trajectoire solaires. ",
+      "status": "Planned"
+    },
+    {
+      "id": 2,
+      "name": "Mushroom Password",
+      "description": "Une extension web et application desktop pour gérer et générer des mots de passe de manière sécurisé et auto-hébergeable",
+      "status": "Cleaning up"
+    },
+    {
+      "id": 3,
+      "name": "Homelab",
+      "description": "Un serveur dédiée à héberger mes services, mes projets et applications, et surotut à tester toutes les nouvelles technologies du moment.",
+      "status": "Completed"
+    }
+  ]
 }

@@ -1,0 +1,71 @@
+/* ===== CONTACT SECTION ===== */
+/* Currently re-using generic layout, but ready for specific styles */
+.contact {
+    width: 100%;
+    padding: 6rem 2rem;
+    background-color: var(--light);
+    /* Subtle background difference */
+}
+
+.contact-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    /* Ensures the text is centered as requested */
+    border: 1px solid var(--border);
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 160px;
+}
+
+/* Button Variants */
+.social-btn.linkedin {
+    background-color: #0077b5;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.social-btn.github {
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.social-btn.email {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--dark);
+    box-shadow: 0 4px 15px rgba(255, 214, 10, 0.4);
+}
+
+.social-btn:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}

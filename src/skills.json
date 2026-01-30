@@ -1,24 +1,31 @@
 {
-    "technical skills": [
-        "JavaScript",
-        "Python",
-        "Java",
-        "C++",
-        "HTML/CSS",
-        "SQL",
-        "Git",
-        "Docker",
-        "Kubernetes",
-        "AWS"
-    ],
-    "soft skills": [
-        "Communication",
-        "Teamwork",
-        "Problem-solving",
-        "Time management",
-        "Adaptability",
-        "Critical thinking",
-        "Leadership",
-        "Creativity"
-    ]
+  "technical skills": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Python",
+    "SQL",
+    "Git",
+    "Github Actions",
+    "Docker",
+    "Proxmox",
+    "Shell",
+    "REST APIs"
+  ],
+  "soft skills": [
+    "Communication",
+    "Travail d'équipe",
+    "Résolution de problèmes",
+    "Gestion du temps",
+    "Adaptabilité",
+    "Esprit critique",
+    "Leadership",
+    "Créativité"
+  ],
+  "working on": [
+    "AWS",
+    "Shell",
+    "Golang"
+  ]
 }
