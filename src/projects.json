@@ -1,0 +1,22 @@
+{
+    "projects" : [
+        {
+            "id": 1,
+            "name": "Project Alpha",
+            "description": "A cutting-edge project focused on AI development.",
+            "status": "In Progress"
+        },
+        {
+            "id": 2,
+            "name": "Project Beta",
+            "description": "A web application for managing tasks and productivity.",
+            "status": "Completed"
+        },
+        {
+            "id": 3,
+            "name": "Project Gamma",
+            "description": "An open-source library for data visualization.",
+            "status": "Planned"
+        }
+    ]
+}
