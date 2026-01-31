@@ -4,5 +4,5 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:80" # Ton app sera accessible sur le port 8080 de ton serveur
+      - "8484:80" # Ton app sera accessible sur le port 8080 de ton serveur
     restart: always
